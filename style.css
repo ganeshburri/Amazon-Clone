@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+#container{
+    width: 100vw;
+    height: 100%;
+    background-color: #E3E7E7;
+}
+header{
+    width: 100vw;
+    height: 6.25rem;
+}
+nav{
+    background-color: #131820;
+    width: 100vw;
+    height: 3.8rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    z-index: 1;
+}
+#options{
+    background-color: #232F3F;
+    position: absolute;
+    top: 3.8rem;
+    width: 100vw;
+    height: 2.45rem;
+}
+#logo{
+    width:8rem;
+    height: 96%;
+    margin-left: 1rem;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#address{
+    width: 13.45rem;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#address img{
+    width: 1.35rem;
+    height: 1.15rem;
+    margin-left: 1rem;
+}
+#address p{
+    padding-left: 0.1rem;
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+#address h4{
+    padding-left: 0.1rem;
+    font-size: 0.9rem;
+}
+#search{
+    width: 42.5rem;
+    height: 100%;
+    margin:0 0.62rem;
+    padding:0.62rem 0.25rem;
+}
+#search form{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+form select{
+    height: 100%;
+    width: 3rem;
+    border: none;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    background-color: #E6E6E6;
+}
+form input{
+    height: 100%;
+    width: 34.87rem;
+    padding: 1rem 0.5rem;
+    border: none;
+}
+form:hover{
+    border: 3px solid #FFBC68;
+}
+form button{
+    height: 100%;
+    width: 3rem;
+    border: none;
+    font-size: 1.3rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    background-color: #FFBC68;
+}
+form button i{
+    opacity: 0.7;
+}
+#lang{
+    width: 4.3rem;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    margin-left: -24px;
+}
+#lang img{
+    width: 1.75rem;
+    height: 1.29rem;
+}
+#lang select{
+    color: rgb(255, 255, 255);
+    background-color: #131820;
+    border: none;
+}
+#sign-in{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+#sign-in p{
+    font-size: 0.75rem;
+}
+#sign-in h4{
+    font-size: 0.9rem;
+}
+#orders{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+#orders p:first-child{
+    font-size: 0.75rem;
+}
+#cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cart img{
+    width: 5rem;
+    height: 3rem;
+}
+:hover:where(#logo,#sign-in,#address,#lang,#orders,#cart){
+    border: 1px solid #fff;
+}
+#options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#options a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2rem;
+}
+#options a:hover{
+    border: 1px solid #fff;
+}
+#options a i{
+    padding-right: 0.2rem;
+}
+#carousel-imgs{
+    width: 100vw;
+    height: 35.6rem;
+}
+#carousel-imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#carousel-imgs .carousel-btn{
+    z-index: 1;
+    background: none;
+    border: none;
+    opacity: 0.7;
+    color: #fff;
+    top:30%;
+}
+#carousel-imgs #prev{
+    font-size: 3rem;
+    position: absolute;
+    left: 1%;
+}
+#carousel-imgs #next{
+    font-size: 3rem;
+    position: absolute;
+    right: 1%;
+}
+#main{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: 1;
+    margin-top: -19rem;
+    background: transparent;
+    gap:1rem;
+}
+.card{
+    width: 20rem;
+    height: 26.25rem;
+    padding: 1.75rem 1.5rem;
+    background-color: #fff;
+}
